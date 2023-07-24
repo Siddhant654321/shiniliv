@@ -27,7 +27,6 @@ const Services = () => {
               </article>
             );
           })}
-          ;
         </div>
       </div>
     </Wrapper>
