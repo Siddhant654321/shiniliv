@@ -12,7 +12,6 @@ const CartColumns = () => {
         <span></span>
       </div>
       <hr />
-        
     </Wrapper>
   );
 };
