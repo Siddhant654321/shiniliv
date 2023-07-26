@@ -134,7 +134,23 @@ const Filters = () => {
             />
           </div>
           {/* end of price */}
+          {/* shipping */}
+          <div className="form-control shipping">
+            <label htmlFor="shipping">free shipping</label>
+            <input
+              type="checkbox"
+              name="shipping"
+              id="shipping"
+              onChange={updateFilters}
+              checked={shipping}
+              style={{ marginRight: "65px" }}
+            />
+          </div>
+          {/* end of shipping */}
         </form>
+        <button type="button" className="clear-btn" onClick={clearFilters}>
+          <FaRetweet /> Clear Filters
+        </button>
       </div>
     </Wrapper>
   );
@@ -222,7 +238,7 @@ const Wrapper = styled.section`
     grid-template-columns: auto 1fr;
     align-items: center;
     text-transform: capitalize;
-    column-gap: 0.5rem;
+    column-gap: 0.4rem;
     font-size: 1rem;
     max-width: 200px;
   }
